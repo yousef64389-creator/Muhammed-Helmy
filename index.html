@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مستر محمد حلمي | English Teacher</title>
+<link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0b1730; --navy2:#12244a; --board:#0e1d3b; --chalk:#f3efe4;
+  --amber:#ffb020; --amber2:#ff8a00; --mute:#9fb0d0;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--navy);color:var(--chalk);font-family:"Tajawal","Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+h1,h2,h3{font-family:"Lalezar","Tajawal",Tahoma,sans-serif;font-weight:400;margin:0;line-height:1.25}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+h2{font-size:clamp(30px,6vw,42px);color:var(--amber);margin-bottom:8px}
+.sub{color:var(--mute);margin:0 0 28px}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* hero */
+.hero{padding:44px 0 36px;background:radial-gradient(circle at 85% 0%,var(--navy2),var(--navy) 60%)}
+.hero .wrap{display:grid;gap:32px;align-items:center}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1fr 1.05fr}}
+.logo{display:inline-flex;align-items:center;gap:10px;font-family:"Lalezar",sans-serif;font-size:22px;margin-bottom:18px}
+.logo b{display:grid;place-items:center;width:46px;height:46px;border-radius:12px;background:var(--amber);color:var(--navy);font-size:22px;direction:ltr}
+.hero h1{font-size:clamp(42px,9vw,74px)}
+.hero h1 span{color:var(--amber)}
+.tag{direction:ltr;text-align:right;color:var(--mute);font-weight:500;margin:10px 0 24px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 26px;border-radius:12px;background:linear-gradient(180deg,var(--amber),var(--amber2));color:var(--navy);font-weight:700;text-decoration:none;border:0;font:inherit;font-weight:700;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--chalk);border:2px solid var(--mute)}
+
+/* chalkboard */
+.board{background:var(--board);border:10px solid #c9d3e6;border-radius:16px;box-shadow:0 0 0 3px var(--amber),0 18px 50px rgba(0,0,0,.5);padding:22px 20px;text-align:center}
+.board h3{font-size:26px;color:var(--chalk);margin-bottom:14px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.slot{border:2px dashed #3b507d;border-radius:12px;padding:14px 8px}
+.slot small{display:block;color:var(--mute);font-size:15px}
+.slot strong{display:block;font-family:"Lalezar",sans-serif;font-weight:400;font-size:30px;color:var(--amber);margin-top:2px}
+.slot span{display:block;font-size:17px}
+.place{margin:6px 0 0;font-weight:700}
+
+/* subjects */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(min-width:700px){.skills{grid-template-columns:repeat(4,1fr)}}
+.skill{background:var(--navy2);border-radius:14px;padding:18px 14px;text-align:center;border-bottom:4px solid var(--amber)}
+.skill b{display:block;font-family:"Lalezar",sans-serif;font-weight:400;font-size:24px;direction:ltr}
+.skill span{color:var(--mute);font-size:15px}
+
+/* form */
+.card{background:var(--navy2);border-radius:18px;padding:24px}
+label{display:block;font-weight:700;margin:14px 0 6px}
+input,select{width:100%;padding:13px 14px;border-radius:10px;border:2px solid #34497a;background:var(--navy);color:var(--chalk);font:inherit}
+input::placeholder{color:#6f82a9}
+.card .btn{margin-top:20px;width:100%}
+.note{color:var(--mute);font-size:14px;margin:10px 0 0}
+
+/* contact */
+.info{display:grid;gap:16px}
+@media(min-width:700px){.info{grid-template-columns:1fr 1fr}}
+.info .card p{margin:4px 0}
+.phone{font-family:"Lalezar",sans-serif;font-size:32px;color:var(--amber);direction:ltr;display:inline-block;text-decoration:none}
+footer{padding:26px 0 90px;text-align:center;color:var(--mute);font-size:14px;border-top:1px solid #22345f}
+
+.wa{position:fixed;inset-inline-start:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;display:flex;align-items:center;gap:8px;background:#25d366;color:#06361a;font-weight:700;padding:12px 18px;border-radius:999px;text-decoration:none;box-shadow:0 6px 20px rgba(0,0,0,.4)}
+.wa svg{width:24px;height:24px;fill:currentColor}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <div class="logo"><b>MH</b> Mohamed Helmy</div>
+      <h1>مستر<br><span>محمد حلمي</span></h1>
+      <p class="tag">English makes the world in your hand</p>
+      <p>مدرس لغة إنجليزية للمرحلة الثانوية. مفردات وجرامر ومحادثة واستماع، وحصص منظمة في سنتر البيان.</p>
+      <div class="btns">
+        <a class="btn" href="#book">احجز مكانك</a>
+        <a class="btn ghost" href="#groups">شوف المواعيد</a>
+      </div>
+    </div>
+
+    <div class="board" id="groups" aria-label="مواعيد المجموعات">
+      <h3>مواعيد المرحلة الثانوية</h3>
+      <p style="margin:0 0 14px;color:var(--mute)">الصف الأول الثانوي</p>
+      <div class="row">
+        <div class="slot"><small>السبت والثلاثاء</small><strong>5:30</strong><span>مساءً</span></div>
+        <div class="slot"><small>الأحد والأربعاء</small><strong>4:00</strong><span>مساءً</span></div>
+      </div>
+      <p class="place">سنتر البيان</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <h2>هنذاكر إيه في الحصة؟</h2>
+    <p class="sub">أربع مهارات بنشتغل عليها مع بعض كل أسبوع.</p>
+    <div class="skills">
+      <div class="skill"><b>Vocabulary</b><span>مفردات</span></div>
+      <div class="skill"><b>Grammar</b><span>قواعد</span></div>
+      <div class="skill"><b>Speaking</b><span>محادثة</span></div>
+      <div class="skill"><b>Listening</b><span>استماع</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="book">
+  <div class="wrap">
+    <h2>احجز مكانك</h2>
+    <p class="sub">املأ البيانات وهتوصل رسالتك للمستر على واتساب.</p>
+    <div class="card">
+      <label for="n">اسم الطالب</label>
+      <input id="n" autocomplete="name" placeholder="الاسم بالكامل">
+      <label for="p">رقم الهاتف</label>
+      <input id="p" type="tel" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx">
+      <label for="g">المجموعة</label>
+      <select id="g">
+        <option>الأول الثانوي - السبت والثلاثاء 5:30م</option>
+        <option>الأول الثانوي - الأحد والأربعاء 4م</option>
+      </select>
+      <button class="btn" id="send" type="button">ابعت الحجز على واتساب</button>
+      <p class="note" id="msg" role="status"></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>مكان السنتر والتواصل</h2>
+    <p class="sub">للحجز والاستفسار كلمنا مباشرة.</p>
+    <div class="info">
+      <div class="card">
+        <h3>العنوان</h3>
+        <p>سنتر البيان - الحي البحري - بجوار قصر الثقافة</p>
+        <a class="btn ghost" style="margin-top:10px" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D8%B3%D9%86%D8%AA%D8%B1+%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86+%D8%A7%D9%84%D8%AD%D9%8A+%D8%A7%D9%84%D8%A8%D8%AD%D8%B1%D9%8A">افتح الخريطة</a>
+      </div>
+      <div class="card">
+        <h3>للحجز والاستفسار</h3>
+        <a class="phone" href="tel:01003870958">01003870958</a>
+        <p><a href="https://wa.me/201003870958" target="_blank" rel="noopener">كلمنا على واتساب</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">مستر محمد حلمي - English Teacher</div></footer>
+
+<a class="wa" href="https://wa.me/201003870958" target="_blank" rel="noopener" aria-label="واتساب">
+  واتساب
+</a>
+
+<script>
+document.getElementById('send').addEventListener('click',function(){
+  var n=document.getElementById('n').value.trim(),
+      p=document.getElementById('p').value.trim(),
+      g=document.getElementById('g').value,
+      m=document.getElementById('msg');
+  if(!n||!p){m.textContent='اكتب اسم الطالب ورقم الهاتف الأول.';return;}
+  m.textContent='';
+  var t='أهلاً مستر محمد، عايز أحجز.\nالاسم: '+n+'\nالهاتف: '+p+'\nالمجموعة: '+g;
+  window.open('https://wa.me/201003870958?text='+encodeURIComponent(t),'_blank','noopener');
+});
+</script>
+</body>
+</html>
